@@ -31,6 +31,7 @@ Atributos globales: Son aquellos que se pueden aplicar a todos los elementos del
     <title>Pasitos de caracol</title>
   </head>
   <body>
+    <hr />
     <!--Etiquetas de titulo o de cabecera de texto: h1, h2, h3, h4, h5, h6
     Las etiquetas de cabecera de texto nos permiten crear un encabezado de texto, y estas etiquetas tienen atributos que nos permiten definir el tamanio, color, estilo, etc.
     -->
@@ -41,42 +42,206 @@ Atributos globales: Son aquellos que se pueden aplicar a todos los elementos del
     <h5>Ola ke ase</h5>
     <h6>C mamut</h6>
 
+    <hr />
+    <hr />
+
     <!--Etiqueta <p> para los parrafos. Nos sirve para agregar informacion estructurada a nuestro documento. Tambien tienen atributos para modificar tamanio, color, estilo, etc., aunque no es una buena practica dotar de estilo a nuestros parrafos directamente desde el html.-->
 
-    <p align="justify">
-      1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolores
+    <p align="justify">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolores
       nihil error unde quibusdam neque esse nam, ullam reprehenderit quis
       accusantium architecto quo? Modi reprehenderit adipisci pariatur aliquam
-      nisi dicta.
-    </p>
-    <p align="rigth">
-      2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eius
+      nisi dicta.</p>
+    <p align="rigth"><blockquote>2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eius
       illo perspiciatis beatae vero amet quo, mollitia rerum aperiam nesciunt
       esse ducimus sunt sapiente fugit, velit maiores architecto laudantium!
-      Maiores!
-    </p>
-    <p align="left">
-      3Libero quae accusantium laudantium fugiat minus commodi eos itaque,
+      Maiores!</blockquote></p>
+    <p align="left">3Libero quae accusantium laudantium fugiat minus commodi eos itaque,
       nostrum autem eaque eligendi, earum molestias ipsa assumenda neque, dolore
       laboriosam! Unde quam exercitationem nostrum quaerat magnam tenetur eos
-      facilis rem!
-    </p>
-    <p>
-      Voluptas quis quo laboriosam repellendus vel culpa explicabo, nesciunt
+      facilis rem!</p>
+    <p>Voluptas quis quo laboriosam repellendus vel culpa explicabo, nesciunt
       laudantium perspiciatis sequi, labore possimus? Et, tenetur! Vero,
       reprehenderit in assumenda, perferendis suscipit cumque aliquid veniam
-      dolor maiores a ipsam. Porro.
-    </p>
-    <p>
-      <blockquote>Dolorum, odio a? Cum quos quod amet ipsum totam doloribus iusto nulla in,
+      dolor maiores a ipsam. Porro.</p>
+    <p>Dolorum, odio a? Cum quos quod amet ipsum totam doloribus iusto nulla in,
       magni sequi ea asperiores possimus voluptatum culpa? Optio ullam
-      sunt accusantium, alias praesentium tempora vel hic!</blockquote>blockquote>
-    </p>
+      sunt accusantium, alias praesentium tempora vel hic!</p>
 
     <!--Etiquetas para formatear texto: strong, em, u, i, b, blockquote
 
 Las etiquetas para formatear texto nos permiten crear texto con diferentes variantes (negritas, cursivas, subrayadas, citas, etc.)
 
 -->
+
+    <!-- Etiquetas hr y br
+
+hr comenta una linea horizontal
+br es equivalente a 2 enter 
+
+-->
+
+    <!-- Etiquetas de enlace <a></a> (anchor)
+
+    Los enlaces nos permiten la navegación por meddio de
+    hipervínculos o links que van a realizar la conexión y
+    referenciar otros archivos o páginas web dentro de la 
+    misma aplicacion o de manera externa 
+  
+    href: atributo que nos permite definir la ubicacion de 
+    la pagina a la que nos vamos a enlazar. Este atributo 
+    puede ser una URL, o una ubicacion dentro de nuestra 
+    carpeta de assets. Pondremos dentro de las comillas la 
+    direccion de la pagina o recurso que queremos enlazar.
+
+    target: el atributo que nos permite definir la ventana de destino, que puede ser una nueva ventana o la misma.
+        - _blank: abre una nueva venta
+        - _self: abrir en la misma venta, este es el atributo por defecto.
+
+-->
+    <a href="https://www.google.com.mx" target="_blank"
+      >Busca más imágenes de perritos playeros</a
+    >
+    <br />
+    <a href="./assets/perritoplayero.jpg" target="_blank"
+      >Un bonito perrito playero</a
+    >
+
+    <!-- Otros enlaces que nos pueden servir más adelante
+          -enlaces de correo: 
+          mailto: jacimenera@gmail.com
+
+    -->
+    <br />
+    <a href="mailto:jacimenera@gmail.com">Envíame un correo</a>
+    <br />
+    <!-- Descarga de archivos -->
+    <a href="./assets/perritoplayero.jpg" download>Descargar</a>
+
+    <!-- Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página. Estos elementos irán precedidos por un guión o número.
+
+    Los tipos de listas que tenemos en HTMl son:
+
+    - Listas ordenadas: Son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden, tendremos los elementos numeros, es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden. Las listas ordenadas se representan mediante la etiqueta ol.
+     -->
+
+    <h3>Esta es una lista ordenada sin atributos</h3>
+
+    <ol>
+      <li>Dalmata</li>
+      <li>Pastor australiano</li>
+      <li>Pitbull</li>
+      <li>Eléctrico</li>
+    </ol>
+
+    <h3>Esta es una lista ordenada con atributos</h3>
+
+    <!-- Atibutos de listas ordenadas:
+
+        - start para definir el orden inicial, por defecto es 1
+        - type pra indicar el tipo de lista que se va a crear
+            - decimal para numeros enteros
+            - lower-alpha para letras minusculas
+            - lower -roman para letras minusculas en romano
+            - upper-alpha para letras mayusculas
+            - upper-roman para mayuscas en romano
+        - reversed: para invertir el orden de los elementos
+       -->
+
+    <ol type="I" start="1">
+      <li>Dalmata</li>
+      <li>Pastor australiano</li>
+      <li>Pitbull</li>
+      <li>Eléctrico</li>
+    </ol>
+
+    <!-- - Listas desordenadas: Las listas desordenadas son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedido por una viñeta que puede ser un punto, un cuadrado, etc.
+
+    Atributos de listas desordenadas:
+        - style para definir el estilo de la lista
+            - circle
+            - disc
+            - square
+       -->
+    <h3>Lista desordenada sin atributos</h3>
+    <ul>
+      <li>Pitbull</li>
+      <li>Golden</li>
+      <li>Pug</li>
+      <li>Rata</li>
+    </ul>
+
+    <h3>Lista desordenada con atributos</h3>
+    <ul style="list-style: square;">
+      <li>Pitbull</li>
+      <li>Golden</li>
+      <li>Pug</li>
+      <li>Rata</li>
+    </ul>
+
+    <!-- - Listas de definiciones: Son aquellas que nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien puede ser cualquier par valor-definicion.
+     -->
+
+    <h3>Lista de definiciones</h3>
+
+    <dl>
+      <!--definition list-->
+      <dt>Gato</dt>
+      <!--definition term!-->
+      <dd>
+        Mamífero carnívoro de la familia de los Félidos, digitígrado, doméstico,
+        de unos cinco decímetros de largo desde la cabeza hasta el arranque de
+        la cola, que por sí sola mide dos decímetros aproximadamente. Pareciera
+        que planean dominar al mundo
+      </dd>
+      <dt>Perro</dt>
+      <dd>
+        Mamífero doméstico de la familia de los cánidos, de tamaño, forma y
+        pelaje muy diversos, según las razas, que tiene olfato muy fino y es
+        inteligente y muy leal a su dueño. Es el mejor amigo del hombre
+      </dd>
+    </dl>
+    <!--
+
+    Etiquetas de imagen (img)
+
+    La etiqueta img nos permite agregar una imagen en un documento web. Entre los formatos aceptados más populares para las imágenes son: jpeg, png, gif y webp.
+
+    Debemos tener en centa que el tamaño de la imagen influye en el proceso de carga de la página. Y por tanto se suelen preparar las imagnes para que su peso sea menor. https://tinypng.com/
+
+    Los atributos de la etiqueta img son:
+
+    - src: es el atributo que nos permite definir la ubicación de la imagen.
+    - alt: es el atributo que nos permite definir una descripción de la imagen.
+    - width: es el atributo que nos permite definir el ancho de la imagen.
+    - height: es el atributo que nos permite definir el alto de la imagen.
+
+-->
+    <img src="./assets/perritoplayero.jpg" alt="perritoplayero" width="200px" />
+
+    <!-- Etiquetas de divisiones (div y span)
+
+     Las etiquetas div y span no tienen ningun signidicado especial, sólo que la etqueta div se define como un elemento bloque y la etiqueta span es un elemento de linea.
+
+    -div: Este es un bñoque de texto, se utiliza pra agrupar elementos en una sola seccion, es decir, si queremos agrupar una imagen y un texto, debemos utilizar un div.
+     -->
+
+     <div align="center" style="color: blueviolet; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+    <img src="/assets/perritoplayero.jpg" alt="Perrito Playero" width="200" height="200">
+    <p>Este texto donde vemos a un bonito perro playero. Este texto está dentro de un div, por lo que si le agregamos estilos directamente al div, podemos agregar colores, fuentes, etc.</p>
+    <p>Incluso podemos agregar listas a este div, y como te puedes dar cuenta, también se le agregan los estilos, por lo que los elementos de la lista también se centrarán de un color morado.</p>
+    <ul>
+        <li> Un elemento de lista centrado </li>
+        <li> Otro elemento de lista centrado </li>
+    </ul>
+    </div>
+
+    <div align="center" style="border: 10px dotted blue;">
+        <h3 >Ejemplo de div y span </h3>
+         <p>
+          Esto es un párrafo dentro de un div,
+           <span style="color: red;"> y esto un span dentro de un párrafo. </span>
+         </p>
+       </div>
+
   </body>
 </html>
